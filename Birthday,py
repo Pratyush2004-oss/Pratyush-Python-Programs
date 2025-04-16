@@ -1,0 +1,13 @@
+birthdays = {"Alice":"01/01/2000","Bob":"02/02/2001","Charlie":"03/03/2003"}
+name = input("Enter the name : ")
+#checking the name in the dictionary
+
+for x in birthdays:
+    if x == name:
+        print(f"Date of Birth of {name} is : {birthdays[x]}")
+        flag = 0
+        break;
+    else:
+        flag = 1
+if flag == 1:
+    print("Person record doesnot exist in the dictionary")
